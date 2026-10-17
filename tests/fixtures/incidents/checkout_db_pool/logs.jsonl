@@ -1,0 +1,83 @@
+{"ts": 1791208201.9, "lvl": "info", "app": "inventory", "msg": "stock reserved", "order_id": 81230, "sku": "SKU-1182"}
+{"@timestamp": "2026-10-05T15:50:02.100000+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81230, "amount_cents": 4599}
+{"timestamp": "2026-10-05T13:50:02.400000Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81230, "items": 2}
+{"timestamp": "2026-10-05T13:50:03Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 92, "upstream": "checkout"}
+{"timestamp": "2026-10-05T13:51:30Z", "level": "DEBUG", "service": "api-gateway", "message": "health check ok", "target": "checkout"}
+{"ts": 1791208291.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.94}
+{"ts": 1791208321.9, "lvl": "info", "app": "inventory", "msg": "stock reserved", "order_id": 81231, "sku": "SKU-1182"}
+{"@timestamp": "2026-10-05T15:52:02.100000+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81231, "amount_cents": 4599}
+{"timestamp": "2026-10-05T13:52:02.400000Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81231, "items": 2}
+{"timestamp": "2026-10-05T13:52:03Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 94, "upstream": "checkout"}
+{"ts": 1791208441.9, "lvl": "info", "app": "inventory", "msg": "stock reserved", "order_id": 81232, "sku": "SKU-1182"}
+{"@timestamp": "2026-10-05T15:54:02.100000+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81232, "amount_cents": 4599}
+{"timestamp": "2026-10-05T13:54:02.400000Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81232, "items": 2}
+{"timestamp": "2026-10-05T13:54:03Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 96, "upstream": "checkout"}
+{"ts": 1791208512.0, "lvl": "warn", "app": "inventory", "msg": "cache miss rate above threshold", "hit_ratio": 0.71, "threshold": 0.8}
+{"timestamp": "2026-10-05T13:55:30Z", "level": "DEBUG", "service": "api-gateway", "message": "health check ok", "target": "checkout"}
+{"ts": 1791208531.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.94}
+{"ts": 1791208561.9, "lvl": "info", "app": "inventory", "msg": "stock reserved", "order_id": 81233, "sku": "SKU-1182"}
+{"@timestamp": "2026-10-05T15:56:02.100000+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81233, "amount_cents": 4599}
+{"timestamp": "2026-10-05T13:56:02.400000Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81233, "items": 2}
+{"timestamp": "2026-10-05T13:56:03Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 98, "upstream": "checkout"}
+{"ts": 1791208572.0, "lvl": "info", "app": "inventory", "msg": "cache miss rate recovered", "hit_ratio": 0.93}
+{"timestamp": "2026-10-05T13:57:00Z", "level": "WARN", "service": "api-gateway", "message": "TLS certificate expires soon", "days_remaining": 21, "host": "api.shop.example"}
+{"ts": 1791208681.9, "lvl": "info", "app": "inventory", "msg": "stock reserved", "order_id": 81234, "sku": "SKU-1182"}
+{"@timestamp": "2026-10-05T15:58:02.100000+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81234, "amount_cents": 4599}
+{"timestamp": "2026-10-05T13:58:02.400000Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81234, "items": 2}
+{"timestamp": "2026-10-05T13:58:03Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 100, "upstream": "checkout"}
+{"timestamp": "2026-10-05T13:59:30Z", "level": "DEBUG", "service": "api-gateway", "message": "health check ok", "target": "checkout"}
+{"ts": 1791208771.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.94}
+{"ts": 1791208801.9, "lvl": "info", "app": "inventory", "msg": "stock reserved", "order_id": 81235, "sku": "SKU-1182"}
+{"@timestamp": "2026-10-05T16:00:02.100000+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81235, "amount_cents": 4599}
+{"timestamp": "2026-10-05T14:00:02.400000Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81235, "items": 2}
+{"timestamp": "2026-10-05T14:00:03Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 102, "upstream": "checkout"}
+{"timestamp": "2026-10-05T14:01:30Z", "level": "INFO", "service": "checkout", "message": "received SIGTERM, draining connections"}
+{"timestamp": "2026-10-05T14:01:44Z", "level": "INFO", "service": "checkout", "message": "starting checkout", "version": "2.14.0", "previous_version": "2.13.2", "git_sha": "9f3c2ab"}
+{"timestamp": "2026-10-05T14:01:45Z", "level": "INFO", "service": "checkout", "message": "config loaded", "db.pool.max_size": 5, "db.pool.acquire_timeout_ms": 5000}
+{"timestamp": "2026-10-05T14:01:46Z", "level": "INFO", "service": "checkout", "message": "database pool initialised", "max_size": 5}
+{"timestamp": "2026-10-05T14:01:50Z", "level": "INFO", "service": "checkout", "message": "ready to accept traffic"}
+{"@timestamp": "2026-10-05T16:02:39+02:00", "severity": "INFO", "service.name": "payments", "message": "charge succeeded", "order_id": 81236, "amount_cents": 1299}
+{"timestamp": "2026-10-05T14:02:40Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81236, "items": 1}
+{"timestamp": "2026-10-05T14:02:41Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 310, "upstream": "checkout"}
+{"timestamp": "2026-10-05T14:03:05Z", "level": "WARN", "service": "checkout", "message": "slow database connection acquire", "waited_ms": 1840, "pool_in_use": 5, "pool_max": 5}
+{"timestamp": "2026-10-05T14:03:50Z", "level": "WARN", "service": "checkout", "message": "slow database connection acquire", "waited_ms": 3920, "pool_in_use": 5, "pool_max": 5, "waiting": 12}
+{"timestamp": "2026-10-05T14:04:10Z", "level": "ERROR", "service": "checkout", "message": "timeout acquiring database connection from pool", "timeout_ms": 5000, "pool_in_use": 5, "pool_max": 5, "waiting": 20}
+{"timestamp": "2026-10-05T14:04:11Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 504", "status": 504, "latency_ms": 5003, "upstream": "checkout"}
+{"@timestamp": "2026-10-05T16:04:12+02:00", "severity": "WARNING", "service.name": "payments", "message": "request cancelled by client before charge", "order_id": 81237, "caller": "checkout"}
+{"timestamp": "2026-10-05T14:04:40Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81238, "items": 3}
+{"timestamp": "2026-10-05T14:04:42Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 4210, "upstream": "checkout"}
+{"timestamp": "2026-10-05T14:05:10Z", "level": "ERROR", "service": "checkout", "message": "timeout acquiring database connection from pool", "timeout_ms": 5000, "pool_in_use": 5, "pool_max": 5, "waiting": 26}
+{"timestamp": "2026-10-05T14:05:11Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 504", "status": 504, "latency_ms": 5003, "upstream": "checkout"}
+{"@timestamp": "2026-10-05T16:05:12+02:00", "severity": "WARNING", "service.name": "payments", "message": "request cancelled by client before charge", "order_id": 81239, "caller": "checkout"}
+{"ts": 1791209165.0, "lvl": "warn", "app": "inventory", "msg": "cache miss rate above threshold", "hit_ratio": 0.77, "threshold": 0.8}
+{"timestamp": "2026-10-05T14:06:10Z", "level": "ERROR", "service": "checkout", "message": "timeout acquiring database connection from pool", "timeout_ms": 5000, "pool_in_use": 5, "pool_max": 5, "waiting": 32}
+{"timestamp": "2026-10-05T14:06:11Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 504", "status": 504, "latency_ms": 5003, "upstream": "checkout"}
+{"@timestamp": "2026-10-05T16:06:12+02:00", "severity": "WARNING", "service.name": "payments", "message": "request cancelled by client before charge", "order_id": 81240, "caller": "checkout"}
+{"timestamp": "2026-10-05T14:06:40Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81241, "items": 3}
+{"timestamp": "2026-10-05T14:06:42Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 4210, "upstream": "checkout"}
+{"timestamp": "2026-10-05T14:07:10Z", "level": "ERROR", "service": "checkout", "message": "timeout acquiring database connection from pool", "timeout_ms": 5000, "pool_in_use": 5, "pool_max": 5, "waiting": 38}
+{"timestamp": "2026-10-05T14:07:11Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 504", "status": 504, "latency_ms": 5003, "upstream": "checkout"}
+{"@timestamp": "2026-10-05T16:07:12+02:00", "severity": "WARNING", "service.name": "payments", "message": "request cancelled by client before charge", "order_id": 81242, "caller": "checkout"}
+{"timestamp": "2026-10-05T14:08:00Z", "level": "ERROR", "service": "api-gateway", "message": "upstream error rate high", "upstream": "checkout", "error_rate_5xx": 0.38, "window_s": 60}
+{"timestamp": "2026-10-05T14:08:10Z", "level": "ERROR", "service": "checkout", "message": "timeout acquiring database connection from pool", "timeout_ms": 5000, "pool_in_use": 5, "pool_max": 5, "waiting": 44}
+{"timestamp": "2026-10-05T14:08:11Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 504", "status": 504, "latency_ms": 5003, "upstream": "checkout"}
+{"@timestamp": "2026-10-05T16:08:12+02:00", "severity": "WARNING", "service.name": "payments", "message": "request cancelled by client before charge", "order_id": 81243, "caller": "checkout"}
+{"timestamp": "2026-10-05T14:08:40Z", "level": "INFO", "service": "checkout", "message": "order placed", "order_id": 81244, "items": 3}
+{"timestamp": "2026-10-05T14:08:42Z", "level": "INFO", "service": "api-gateway", "message": "POST /api/checkout 200", "status": 200, "latency_ms": 4210, "upstream": "checkout"}
+{"timestamp": "2026-10-05T14:09:10Z", "level": "ERROR", "service": "checkout", "message": "timeout acquiring database connection from pool", "timeout_ms": 5000, "pool_in_use": 5, "pool_max": 5, "waiting": 50}
+{"timestamp": "2026-10-05T14:09:11Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 504", "status": 504, "latency_ms": 5003, "upstream": "checkout"}
+{"@timestamp": "2026-10-05T16:09:12+02:00", "severity": "WARNING", "service.name": "payments", "message": "request cancelled by client before charge", "order_id": 81245, "caller": "checkout"}
+{"timestamp": "2026-10-05T14:10:15Z", "level": "ERROR", "service": "checkout", "message": "circuit breaker opened", "dependency": "orders-db", "failures_in_window": 41}
+{"timestamp": "2026-10-05T14:11:00Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 503", "status": 503, "latency_ms": 4, "upstream": "checkout", "reason": "circuit open"}
+{"ts": 1791209490.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.91}
+{"timestamp": "2026-10-05T14:13:00Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 503", "status": 503, "latency_ms": 4, "upstream": "checkout", "reason": "circuit open"}
+{"ts": 1791209610.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.91}
+{"timestamp": "2026-10-05T14:15:00Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 503", "status": 503, "latency_ms": 4, "upstream": "checkout", "reason": "circuit open"}
+{"timestamp": "2026-10-05T14:15:00Z", "level": "ERROR", "service": "api-gateway", "message": "upstream error rate high", "upstream": "checkout", "error_rate_5xx": 0.61, "window_s": 60}
+{"ts": 1791209730.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.91}
+{"@timestamp": "2026-10-05T16:16:00+02:00", "severity": "INFO", "service.name": "payments", "message": "charge volume below baseline", "charges_per_min": 3, "baseline_per_min": 28}
+{"timestamp": "2026-10-05T14:17:00Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 503", "status": 503, "latency_ms": 4, "upstream": "checkout", "reason": "circuit open"}
+{"ts": 1791209850.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.91}
+{"timestamp": "2026-10-05T14:18:00Z", "level": "CRITICAL", "service": "checkout", "message": "orders-db health check failing from checkout", "pool_in_use": 5, "pool_max": 5, "waiting": 88}
+{"timestamp": "2026-10-05T14:19:00Z", "level": "ERROR", "service": "api-gateway", "message": "POST /api/checkout 503", "status": 503, "latency_ms": 4, "upstream": "checkout", "reason": "circuit open"}
+{"ts": 1791209970.0, "lvl": "debug", "app": "inventory", "msg": "cache stats", "hit_ratio": 0.91}
