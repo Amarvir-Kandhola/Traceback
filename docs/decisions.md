@@ -47,3 +47,32 @@ can be added when a real source needs it.
 Structured JSON logs are the common case for modern services and need no per-format
 parsing. Field aliases cover the usual shapes (`ts`/`@timestamp`, `msg`, `severity`,
 `service.name`). Plain-text formats (regex per format) are deferred.
+
+## 2026-10-17 — stdlib `sqlite3`, no ORM
+Storage uses Python's built-in `sqlite3` behind a small `Store` class. The alternatives
+were SQLAlchemy (Core or ORM) and SQLModel. With two tables and a handful of queries an
+ORM adds a dependency and a layer of indirection without removing much code, and plain
+SQL is easier to explain and debug. All SQL lives in `storage/store.py`, so moving to
+SQLAlchemy (e.g. for PostgreSQL) later means rewriting one module.
+
+## 2026-10-17 — Evidence keyed by (incident_id, evidence id)
+Evidence IDs come from content, not from the incident, so the same log file attached to
+two incidents produces the same IDs. A composite primary key lets each incident hold its
+own copy, and `INSERT OR IGNORE` on that key makes re-ingesting idempotent. The
+alternative, one global evidence table plus a join table, avoids duplicate rows but adds
+a table and a join for little gain at this scale. Because the ID hashes the content, an
+ID collision with different content is not a realistic concern, so ignoring on conflict
+does not hide changed data.
+
+## 2026-10-17 — Fixed-width UTC timestamp strings in SQLite
+SQLite has no datetime type. Timestamps are stored as `%Y-%m-%dT%H:%M:%S.%fZ` in UTC.
+Fixed width makes `ORDER BY timestamp` chronological; `datetime.isoformat()` drops
+`.000000` when microseconds are zero and would not be safe to sort as text in general.
+The alternative, epoch floats, sorts correctly but is unreadable when inspecting the
+database and loses microsecond precision for current dates.
+
+## 2026-10-17 — Schema versioning via `PRAGMA user_version`
+The schema is created with `CREATE TABLE IF NOT EXISTS` and stamped with a version
+number. Opening a database with a different version raises instead of guessing. A
+migration tool (e.g. Alembic) is not justified until the schema changes after real data
+exists.
